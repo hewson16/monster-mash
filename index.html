@@ -1,12 +1,27 @@
+<!--Add button-->
+<!--Add empty p tag X times for each unique id-->
+
 <!DOCTYPE html>
     <head>
         <title>Monster Mash</title>
     </head>
     <body>
         <h1>Monster Mash</h1>
-        <button id="button">Create 3 Monsters</button>
+        
+        <button onclick="generateMash()">Create 3 Monsters</button>
+        
+        <p id="cat"></p>
+        <p id="hydra"></p>
+        <p id="worm"></p>
+
+        <!--BONUS User Input-->
+        <div>
+            <label for="userMonster">Monster:</label>
+            <input type="text" id="userMonster" name="userMonster">
+        </div>
+
+        <button onclick="generateUserMonster()">Generate Personal Monster</button>
      
         <script src="js/index.js"></script>
     </body>
-    
 </html>
